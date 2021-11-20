@@ -3,25 +3,62 @@ body {
    padding-bottom: 1em;
    font-family: monospace;
    font-size: 12px;
-   margin-top: 50px;
+   margin-top: 24px;
 }
-h1 {font-size:14px}
-ul {margin: 0; padding: 0; list-style: none}
-.stacktrace {display: none; color: #4A4A4A;}
-.invertedstacktrace {display: block;}
-.date {color: #4A4A4A;}
-.dinline {display:inline}
-.bullmargin {margin-left:5px; margin-right:5px}
 
-a:link {text-decoration: none}
-a:visited {text-decoration: none}
-a:active {text-decoration: none}
-a:hover {text-decoration: underline; color: red}
+h1 {
+   font-size: 14px
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none
+}
+
+.stacktrace {
+   display: none;
+   color: #4A4A4A;
+}
+
+.invertedstacktrace {
+   display: block;
+}
+
+.date {
+   color: #4A4A4A;
+}
+
+.dinline {
+   display: inline
+}
+
+.bullmargin {
+   margin-left: 5px;
+   margin-right: 5px
+}
+
+a:link {
+   text-decoration: none
+}
+
+a:visited {
+   text-decoration: none
+}
+
+a:active {
+   text-decoration: none
+}
+
+a:hover {
+   text-decoration: underline;
+   color: red
+}
 
 .log-tools {
-   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
-   background-color: rgba(255,255,255,.9);
+   background-color: rgba(255, 255, 255, .9);
    border: solid thin #eee;
    width: 200px;
    position: fixed;
@@ -34,10 +71,10 @@ a:hover {text-decoration: underline; color: red}
 }
 
 .log-info {
-   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
    position: fixed;
    top: 0;
-   background-color: rgba(255,255,255,.9);
+   background-color: rgba(255, 255, 255, .9);
    right: 0;
    left: 0;
    padding: 10px;
@@ -52,12 +89,12 @@ span.date {
 }
 
 div {
-   padding-left: 15em;
+   padding-left: 8em;
    display: inline-block;
    border-bottom: 1px #350438 solid;
    padding-bottom: 0.03em;
    margin-bottom: 0.03em;
-   min-width: calc(100% - 185px);
+   min-width: calc(100% - 105px);
 }
 
 .date {
@@ -86,10 +123,19 @@ div {
 .INFO a {
    color: #337ab7;
 }
+
 .INFO a span {
    display: inline-block;
    color: #6f69b8 !important;
    width: 3em;
+}
+
+.INFO a:nth-child(3), .INFO a:nth-child(4), .INFO a:nth-child(5), .INFO a:nth-child(6) {
+   display: none;
+}
+
+.INFO:hover a:nth-child(3), .INFO:hover a:nth-child(4), .INFO:hover a:nth-child(5), .INFO:hover a:nth-child(6) {
+   display: initial;
 }
 
 .LogUtilImpl {
@@ -141,10 +187,10 @@ div:hover {
 
 ::-moz-selection {
    background: rgba(239, 239, 97, 0.6);
-    color: #131313;
- }
- 
- ::selection {
+   color: #131313;
+}
+
+::selection {
    background: rgba(239, 239, 97, 0.6);
-    color: #131313;
- }
+   color: #131313;
+}
